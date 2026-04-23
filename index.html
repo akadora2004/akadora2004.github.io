@@ -3,20 +3,27 @@
     <head>
         <meta charset="UTF-8">
         <title>あかどら</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
         <link rel="stylesheet" href="css/default.css">
     </head>
     <body>
         <div class="container mt-5">
-            <h1>あかどらのホームページ（未完成）</h1>
+            <h1>あかどらのホームページ</h1>
             <p>サイバーセキュリティに興味がある大学生</p>
-            <ul>
-                <li><a href="https://x.com/akadora2004">あかどらのX</a></li>
-                <li><a href="https://github.com/akadora2004">あかどらのGitHub</a></li>
-            </ul>
+            <div class="social-links mt-4">
+                <a href="https://github.com/akadora2004" class="icon-link">
+                    <i class="fa-brands fa-github"></i> GitHub
+                </a>
+
+                <a href="https://x.com/akadora2004" class="icon-link">
+                    <i class="fa-brands fa-x-twitter"></i> X
+                </a>
+            </div>
             <p>アイコン未設定です。いつか更新します。</p>
             <div class="card" style="width: 20rem;">
-                <img src="img/default_profile_400x400.png" class="card-img-top" alt="...">
+                <img src="img/default_profile_400x400.png" class="card-img-top" alt="アイコン">
                 <div class="card-body">
                     <h5 class="card-title">あかどら</h5>
                     <p class="card-text">
@@ -29,32 +36,77 @@
                     </p>
                 </div>
             </div>
-            <h2>開発環境</h2>
-            <h3>パソコン</h3>
+
+            <section class="timeline-section py-5">
+                <div class="container">
+                    <h2 class="section-title mb-5">歴史</h2>
+                    
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-date">2024.04</div>
+                            <div class="timeline-content">
+                                <p>東洋大学 情報連携学部 INIAD 入学</p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-date">2025.08</div>
+                            <div class="timeline-content">
+                                <p>ITパスポート取得</p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-date">2026.03</div>
+                            <div class="timeline-content">
+                                <p>セキュリティキャンプ2026大阪ミニ受講</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <h2 class="section-title mb-5">開発環境</h2>
             <div class="table-responsive">
                 <table class="table table-dark table-bordered mx-auto text-center">
                     <thead>
                         <tr>
                             <th>デバイス名</th>
+                            <th>OS</th>
                             <th>マザーボード</th>
                             <th>CPU</th>
                             <th>GPU</th>
                             <th>メモリ</th>
                             <th>ストレージ</th>
                             <th>CPUクーラー</th>
+                            <th>電源</th>
                             <th>PCケース</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td>自作ゲーミングPC</td>
-                            <td>？</td>
+                            <td>Windows 11 Home</td>
+                            <td>TUF GAMING B550-PLUS</td>
                             <td>AMD Ryzen7 5700X</td>
                             <td>NVIDIA GeForce RTX 4070 SUPER</td>
-                            <td>...</td>
-                            <td>...</td>
-                            <td>...</td>
-                            <td>...</td>
+                            <td>Crucial DDR4 3200MHz 16GB×2</td>
+                            <td>Crucial M.2 NVMe SSD 7100MB/s 2TB Seagate 3.5 HDD 5400rpm 3TB</td>
+                            <td>DEEPCOOL AG620 ARGBR-AG620-BKANMN-G-1</td>
+                            <td>ANTEC NeECO 80PLUS GOLD 650W</td>
+                            <td>MONTECH×Dospara XR B-DP ATX</td>
+                        </tr>
+                        <tr>
+                            <td>ノートPC</td>
+                            <td>Windows 11 Home</td>
+                            <td>-</td>
+                            <td>AMD Ryzen7 7735HS</td>
+                            <td>AMD Radeon(TM) 680M</td>
+                            <td>SAMSUNG DDR5 4800MT/s 16GB×2</td>
+                            <td>SAMSUNG M.2 NVMe SSD ????MB/s 256GB Crucial M.2 Nvme SSD 5000MB/s 1TB</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
                         </tr>
                     </tbody>
                 </table>
