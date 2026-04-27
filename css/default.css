@@ -90,3 +90,37 @@ body {
     text-shadow: 0 0 10px #00ff41;
     transform: scale(1.1);
 }
+
+.tech-card {
+    background-color: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 12px;
+    padding: 20px 10px;
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    height: 100%;
+}
+
+.tech-card i {
+    font-size: 2.5rem;
+    color: #58a6ff;
+}
+
+.tech-card span {
+    font-size: 0.85rem;
+    color: #c9d1d9;
+}
+
+.tech-card:hover {
+    border-color: #00ff41;
+    box-shadow: 0 0 15px rgba(0, 255, 65, 0.2);
+    transform: translateY(-5px);
+}
+
+.tech-card:hover i {
+    color: #00ff41;
+    text-shadow: 0 0 10px #00ff41;
+}
