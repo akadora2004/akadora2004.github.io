@@ -91,6 +91,16 @@ body {
     transform: scale(1.1);
 }
 
+.brand-icon {
+    width: 1em;
+    height: 1em;
+    background-color: currentColor;
+    display: inline-block;
+    flex-shrink: 0;
+    mask: var(--icon-url) center / contain no-repeat;
+    -webkit-mask: var(--icon-url) center / contain no-repeat;
+}
+
 .tech-card {
     background-color: #161b22;
     border: 1px solid #30363d;
