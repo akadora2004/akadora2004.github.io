@@ -101,6 +101,50 @@ body {
     -webkit-mask: var(--icon-url) center / contain no-repeat;
 }
 
+.article-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.article-link {
+    background-color: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 8px;
+    color: #c9d1d9;
+    text-decoration: none;
+    padding: 16px;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.article-link:hover {
+    border-color: #00ff41;
+    color: #00ff41;
+    box-shadow: 0 0 15px rgba(0, 255, 65, 0.2);
+    transform: translateY(-3px);
+}
+
+.article-service {
+    color: #58a6ff;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+}
+
+.article-link:hover .article-service {
+    color: #00ff41;
+}
+
+.article-title {
+    flex: 1;
+    min-width: 0;
+}
+
 .tech-card {
     background-color: #161b22;
     border: 1px solid #30363d;
