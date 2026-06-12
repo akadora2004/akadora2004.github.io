@@ -7,9 +7,13 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
         <link rel="stylesheet" href="css/default.css">
-        <script src="js/index.js"></script>
+        <script src="js/index.js" defer></script>
     </head>
     <body>
+        <button class="theme-toggle" type="button" aria-label="ライトモードに切り替え" aria-pressed="false">
+            <i class="fa-solid fa-sun" aria-hidden="true"></i>
+            <span>Light</span>
+        </button>
         <div class="container mt-5">
             <h1>あかどらのホームページ</h1>
             <p>サイバーセキュリティに興味がある大学生</p>
@@ -181,7 +185,7 @@
                 </div>
             </section>
             <div class="table-responsive">
-                <table class="table table-dark table-bordered mx-auto text-center">
+                <table class="table site-table table-bordered mx-auto text-center">
                     <thead>
                         <tr>
                             <th>デバイス名</th>
