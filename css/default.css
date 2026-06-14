@@ -269,3 +269,8 @@ body {
         display: none;
     }
 }
+
+.device-table thead th {
+    color: #fff;
+    font-weight: 600;
+}
