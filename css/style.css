@@ -25,3 +25,16 @@
 #link-article {
     text-decoration: none;
 }
+
+body {
+    width: min(900px, calc(100% - 32px));
+    margin-right: auto;
+    margin-left: auto;
+    text-align: left;
+}
+
+table {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
