@@ -1,245 +1,130 @@
 <!DOCTYPE html>
-<html lang="ja">
+    <html lang="ja">
     <head>
         <meta charset="UTF-8">
-        <title>あかどら</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-        <link rel="stylesheet" href="css/default.css">
-        <script src="js/index.js" defer></script>
+        <link rel="stylesheet" href="css/style.css">
+        <title>あかどらのホームページ</title>
     </head>
     <body>
-        <button class="theme-toggle" type="button" aria-label="ライトモードに切り替え" aria-pressed="false">
-            <i class="fa-solid fa-sun" aria-hidden="true"></i>
-            <span>Light</span>
-        </button>
-        <div class="container mt-5">
-            <h1>あかどらのホームページ</h1>
-            <p>サイバーセキュリティに興味がある大学生</p>
-            <div class="social-links mt-4">
-                <a href="https://github.com/akadora2004" class="icon-link">
-                    <span class="brand-icon" style="--icon-url: url('https://cdn.simpleicons.org/github');" aria-hidden="true"></span>
-                    GitHub
-                </a>
+        <h1>あかどらのホームページ</h1>
+        <h2>自己紹介</h2>
+        <p>
+            サイバーセキュリティに興味を持ち始め、Webセキュリティを主に学習中。<br>
+            しかし、エンジニアとしてのスキルが不足しているため現在はWebアプリ実装に学習を注いでいる。
+        </p>
 
-                <a href="https://x.com/akadora2004" class="icon-link">
-                    <span class="brand-icon" style="--icon-url: url('https://cdn.simpleicons.org/x');" aria-hidden="true"></span>
-                    X
-                </a>
+        <img src="img/IMG_2033.png" alt="アイコン" width="200px">
 
-                <a href="https://qiita.com/akadora2004" class="icon-link">
-                    <span class="brand-icon" style="--icon-url: url('https://cdn.simpleicons.org/qiita');" aria-hidden="true"></span>
-                    Qiita
-                </a>
+        <p>大学：東洋大学 情報連携学部 情報連携学科 <a href="http://iniad.org" target="_blank" rel="noopener noreferrer" id="link-iniad">INIAD</a></p>
+        <p>学年：3年</p>
+        <p>趣味：音楽（ボカロ）、アニメ</p>
+        <p>その他：自宅鯖（ラズパイ5）、自作ゲーミングPC</p>
 
-                <a href="https://zenn.dev/akadora2004" class="icon-link">
-                    <span class="brand-icon" style="--icon-url: url('https://cdn.simpleicons.org/zenn');" aria-hidden="true"></span>
-                    Zenn
-                </a>
-            </div>
-            <div class="card" style="width: 20rem;">
-                <img src="img/IMG_2033.png" class="card-img-top" alt="アイコン">
-                <div class="card-body">
-                    <h5 class="card-title">あかどら</h5>
-                    <p class="card-text">
-                        大学：東洋大学 情報連携学部 INIAD<br>
-                        学年：3年生<br>
-                        趣味：ボカロ、アニメ<br>
-                        その他の情報：<br>
-                        自宅鯖(ラズパイ5) / 自作PC(組み立て)
-                    </p>
-                </div>
-            </div>
+        <h3>アカウントリンク集</h3>
+        
+        <a href="http://x.com/akadora2004" target="_blank" rel="noopener noreferrer" id="link-x">
+            <img src="img/x.png" alt="X" width="50px">
+        </a>
+        <a href="https://github.com/akadora2004" target="_blank" rel="noopener noreferrer" id="link-github">
+            <img src="img/github.png" alt="GitHub" width="50px">
+        </a>
+        <a href="https://zenn.dev/akadora2004" target="_blank" rel="noopener noreferrer" id="link-zenn">
+            <img src="img/zenn.png" alt="Zenn" width="50px">
+        </a>
+        <a href="https://qiita.com/akadora2004" target="_blank" rel="noopener noreferrer" id="link-qiita">
+            <img src="img/qiita.jpg" alt="qiita" width="50px">
+        </a>
 
-            <section class="timeline-section py-5">
-                <div class="container">
-                    <h2 class="section-title mb-5">歴史</h2>
-                    
-                    <div class="timeline">
-                        <div class="timeline-item">
-                            <div class="timeline-date">2024.04</div>
-                            <div class="timeline-content">
-                                <p>東洋大学 情報連携学部 <a href="https://iniad.org">INIAD</a> 入学</p>
-                            </div>
-                        </div>
-                        
-                        <div class="timeline-item">
-                            <div class="timeline-date">2025.08</div>
-                            <div class="timeline-content">
-                                <p>ITパスポート取得</p>
-                            </div>
-                        </div>
-                        
-                        <div class="timeline-item">
-                            <div class="timeline-date">2026.03</div>
-                            <div class="timeline-content">
-                                <p>セキュリティ・キャンプ2026ミニ（大阪開催）受講</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="articles-section py-5">
-                <div class="container">
-                    <h2 class="section-title mb-4">記事</h2>
-
-                    <div class="article-list">
-                        <a href="https://zenn.dev/akadora2004/articles/f4b39bf74d5157" class="article-link">
-                            <span class="article-service">
-                                <span class="brand-icon" style="--icon-url: url('https://cdn.simpleicons.org/zenn');" aria-hidden="true"></span>
-                                Zenn
-                            </span>
-                            <span class="article-title">
-                                セキュリティ・キャンプ 2026 全国大会 専門Bに落ちたので応募課題と反省を晒す
-                            </span>
-                            <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
-                        </a>
-                    </div>
-                </div>
-            </section>
-
-            <h2 class="section-title mb-5">開発環境</h2>
-            <section class="tech-stack-section py-5">
-                <div class="container">
-                    
-                    <div class="row g-4">
-                        
-                        <div class="col-12 mt-4">
-                            <p class="category-label"><i class="fa-solid fa-terminal"></i> 大学の講義 + 個人開発</p>
-                        </div>
-                        <div class="col-6 col-md-3">
-                            <div class="tech-card">
-                                <i class="fa-brands fa-python"></i>
-                                <span>Python</span>
-                            </div>
-                        </div>
-                        <div class="col-6 col-md-3">
-                            <div class="tech-card">
-                                <i class="fa-solid fa-cube"></i>
-                                <span>Django</span>
-                            </div>
-                        </div>
-
-                        <div class="col-12 mt-5">
-                            <p class="category-label"><i class="fa-solid fa-terminal"></i> 大学の講義</p>
-                        </div>
-                        <div class="col-6 col-md-4">
-                            <div class="tech-card">
-                                <i class="fa-brands fa-java"></i>
-                                <span>Java</span>
-                            </div>
-                        </div>
-                        <div class="col-6 col-md-4">
-                            <div class="tech-card">
-                                <i class="fa-brands fa-js"></i>
-                                <span>JavaScript</span>
-                            </div>
-                        </div>
-                        <div class="col-6 col-md-4">
-                            <div class="tech-card">
-                                <i class="fa-solid fa-flask"></i> <span>Flask</span>
-                            </div>
-                        </div>
-
-                        <div class="col-12 mt-5">
-                            <p class="category-label"><i class="fa-solid fa-terminal"></i> その他の情報</p>
-                        </div>
-                        <div class="col-6 col-md-4 col-lg-2">
-                            <div class="tech-card">
-                                <i class="fa-brands fa-ubuntu"></i>
-                                <span>Ubuntu</span>
-                            </div>
-                        </div>
-                        <div class="col-6 col-md-4 col-lg-2">
-                            <div class="tech-card">
-                                <i class="fa-solid fa-shield-halved"></i> <span>Kali Linux</span>
-                            </div>
-                        </div>
-                        <div class="col-6 col-md-4 col-lg-2">
-                            <div class="tech-card">
-                                <i class="fa-brands fa-github"></i>
-                                <span>GitHub & Git</span>
-                            </div>
-                        </div>
-                        <div class="col-6 col-md-4 col-lg-2">
-                            <div class="tech-card">
-                                <i class="fa-solid fa-code"></i>
-                                <span>VS Code</span>
-                            </div>
-                        </div>
-                        <div class="col-6 col-md-4 col-lg-2">
-                            <div class="tech-card">
-                                <i class="fa-solid fa-box-open"></i> <span>Virtual Box</span>
-                            </div>
-                        </div>
-                        <div class="col-6 col-md-4 col-lg-2">
-                            <div class="tech-card">
-                                <i class="fa-brands fa-slack"></i>
-                                <span>Slack</span>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </section>
-            <div class="table-responsive">
-                <table class="table site-table table-bordered mx-auto text-center device-table">
-                    <thead>
-                        <tr>
-                            <th>デバイス名</th>
-                            <th>OS</th>
-                            <th>マザーボード</th>
-                            <th>CPU</th>
-                            <th>GPU</th>
-                            <th>メモリ</th>
-                            <th>ストレージ</th>
-                            <th>CPUクーラー</th>
-                            <th>電源</th>
-                            <th>PCケース</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>自作ゲーミングPC</td>
-                            <td>Windows 11 Home</td>
-                            <td>TUF GAMING B550-PLUS</td>
-                            <td>AMD Ryzen7 5700X</td>
-                            <td>NVIDIA GeForce RTX 4070 SUPER</td>
-                            <td>Crucial DDR4 3200MHz 16GB×2</td>
-                            <td>Crucial M.2 NVMe SSD 7100MB/s 2TB Seagate 3.5 HDD 5400rpm 3TB</td>
-                            <td>DEEPCOOL AG620 ARGBR-AG620-BKANMN-G-1</td>
-                            <td>ANTEC NeECO 80PLUS GOLD 650W</td>
-                            <td>MONTECH×Dospara XR B-DP ATX</td>
-                        </tr>
-                        <tr>
-                            <td>ノートPC</td>
-                            <td>Windows 11 Home</td>
-                            <td>-</td>
-                            <td>AMD Ryzen7 7735HS</td>
-                            <td>AMD Radeon(TM) 680M</td>
-                            <td>SAMSUNG DDR5 4800MT/s 16GB×2</td>
-                            <td>SAMSUNG M.2 NVMe SSD ????MB/s 256GB Crucial M.2 Nvme SSD 5000MB/s 1TB</td>
-                            <td>-</td>
-                            <td>-</td>
-                            <td>-</td>
-                        </tr>
-                        <tr>
-                            <td>ラズパイ5</td>
-                            <td>Raspberry Pi OS Lite</td>
-                            <td>-</td>
-                            <td>Arm Cortex-A76</td>
-                            <td>VideoCore VII</td>
-                            <td>LPDDR4X-4267 SDRAM 8GB</td>
-                            <td>SP M.2 NVMe SSD 1800MB/s 128GB</td>
-                            <td>公式CPUクーラー</td>
-                            <td>27W</td>
-                            <td>Pironman5</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+        <h2>歴史</h2>
+        <div>
+            <p><small>2024.04</small></p>
+            <p>東洋大学 情報連携学部 情報連携学科 INIAD 入学</p>
+            <p><small>2025.08</small></p>
+            <p>ITパスポート試験合格</p>
+            <p><small>2026.03</small></p>
+            <p><a href="https://www.security-camp.or.jp/minicamp/osaka2026.html" target="_blank" rel="noopener noreferrer" id="link-seccampmini">
+                セキュリティ・キャンプ2026ミニ（大阪開催）専門講座 受講</a>
+            </p>
         </div>
+
+        <h2>記事</h2>
+        <ul>
+            <li><a href="https://zenn.dev/akadora2004/articles/f4b39bf74d5157" target="_blank" rel="noopener noreferrer" id="link-article">
+                セキュリティ・キャンプ2026 全国大会 専門Bに落ちたので応募課題と反省を晒す</a>
+            </li>
+        </ul>
+
+        <h3>開発環境</h3>
+        <h2>>_大学の講義 + 個人開発</h2>
+        <p>Python</p>
+        <p>Django</p>
+
+        <h2>>_大学の講義</h2>
+        <p>Java</p>
+
+        <h2>>_その他</h2>
+        <p>Ubuntu</p>
+        <p>GitHub & Git</p>
+        <p>VS Code</p>
+        <p>Slack</p>
+
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>デバイス名</th>
+                    <th>OS</th>
+                    <th>マザーボード</th>
+                    <th>CPU</th>
+                    <th>GPU</th>
+                    <th>メモリ</th>
+                    <th>ストレージ</th>
+                    <th>CPUクーラー</th>
+                    <th>電源</th>
+                    <th>PCケース</th>
+               </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>自作ゲーミングPC</td>
+                    <td>Windows 11 Home</td>
+                    <td>TUF GAMING B550-PLUS</td>
+                    <td>AMD Ryzen7 5700X</td>
+                    <td>NVIDIA GeForce RTX 4070 SUPER</td>
+                    <td>Crucial DDR4 3200MHz 16GB×2</td>
+                    <td>Crucial M.2 NVMe SSD 7100MB/s 2TB Seagate 3.5 HDD 5400rpm 3TB</td>
+                    <td>DEEPCOOL AG620 ARGBR-AG620-BKANMN-G-1</td>
+                    <td>ANTEC NeECO 80PLUS GOLD 650W</td>
+                    <td>MONTECH×Dospara XR B-DP ATX</td>
+                </tr>
+                <tr>
+                    <td>ノートPC</td>
+                    <td>Windows 11 Home</td>
+                    <td>-</td>
+                    <td>AMD Ryzen7 7735HS</td>
+                    <td>AMD Radeon(TM) 680M</td>
+                    <td>SAMSUNG DDR5 4800MT/s 16GB×2</td>
+                    <td>SAMSUNG M.2 NVMe SSD ????MB/s 256GB Crucial M.2 Nvme SSD 5000MB/s 1TB</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>ラズパイ5</td>
+                    <td>Raspberry Pi OS Lite</td>
+                    <td>-</td>
+                    <td>Arm Cortex-A76</td>
+                    <td>VideoCore VII</td>
+                    <td>LPDDR4X-4267 SDRAM 8GB</td>
+                    <td>SP M.2 NVMe SSD 1800MB/s 128GB</td>
+                    <td>公式CPUクーラー</td>
+                    <td>27W</td>
+                    <td>Pironman5</td>
+                </tr>
+            </tbody>
+        </table>
+        <footer>
+
+        </footer>
     </body>
 </html>
