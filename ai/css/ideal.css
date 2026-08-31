@@ -338,8 +338,6 @@ h2 {
 /* skills */
 .skills-section { display: flex; flex-direction: column; gap: 2rem; }
 
-.skill-block { }
-
 .skill-label {
     font-family: 'Share Tech Mono', monospace;
     font-size: 0.7rem;
@@ -372,7 +370,6 @@ h2 {
 .tag-hot { border-color: var(--green-mute); color: var(--green); background: rgba(0,255,136,0.07); }
 
 /* ── Experience ── */
-#experience { }
 
 .timeline {
     border-left: 1px solid var(--border2);
@@ -556,7 +553,6 @@ h2 {
 .diff-pip.hard { background: var(--red); }
 
 /* ── Links ── */
-#contact { }
 
 .links-grid {
     display: grid;
