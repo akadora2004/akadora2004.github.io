@@ -276,7 +276,15 @@ h2 {
 }
 
 /* ── About ── */
-#about { background: var(--bg2); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+body > section:nth-of-type(odd) {
+    background: var(--bg2);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+}
+
+body > section:nth-of-type(even) {
+    background: var(--bg);
+}
 
 .about-grid {
     display: grid;
@@ -425,6 +433,43 @@ h2 {
     margin-bottom: 0.75rem;
 }
 
+.tl-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    width: fit-content;
+    margin: 0.4rem 0 0.75rem;
+    padding: 0.35rem 0.75rem;
+    color: var(--cyan-dim);
+    background: rgba(0, 212, 255, 0.04);
+    border: 1px solid rgba(0, 212, 255, 0.35);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.04em;
+    text-decoration: none;
+    transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+}
+
+.tl-link::before {
+    color: var(--text-muted);
+    content: '$';
+}
+
+.tl-link::after {
+    content: '↗';
+    transition: transform 0.2s;
+}
+
+.tl-link:hover {
+    color: var(--cyan);
+    background: rgba(0, 212, 255, 0.1);
+    border-color: var(--cyan);
+}
+
+.tl-link:hover::after {
+    transform: translate(2px, -2px);
+}
+
 .tl-desc {
     font-size: 1rem;
     color: var(--text-muted);
@@ -448,8 +493,6 @@ h2 {
 }
 
 /* ── Projects / CTF ── */
-#projects { background: var(--bg2); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
-
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -700,3 +743,24 @@ h1            { animation: fadeUp 0.5s ease 0.3s both; }
     .contact-footer { grid-template-columns: 1fr; }
     footer { padding: 1.5rem; }
 }
+
+.article-card {
+    display: flex; align-items: center; justify-content: space-between; gap: 2rem;
+    padding: 1.75rem 2rem;
+    background: var(--bg3);
+    border: 1px solid var(--border2);
+    text-decoration: none; color: inherit;
+    transition: all 0.2s;
+}
+.article-card:hover { border-color: var(--green-mute); background: var(--surface); }
+.article-tag {
+    font-family: 'Share Tech Mono', monospace; font-size: 0.65rem;
+    color: var(--text-dim); letter-spacing: 0.15em; text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+.article-title {
+    font-family: 'Rajdhani', sans-serif; font-size: 1.15rem; font-weight: 600;
+    color: #E8F4FF; line-height: 1.4;
+}
+.article-arrow { font-family: 'Share Tech Mono', monospace; font-size: 1.1rem; color: var(--green); flex-shrink: 0; transition: transform 0.2s; }
+.article-card:hover .article-arrow { transform: translate(3px, -3px); }
