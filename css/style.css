@@ -623,6 +623,7 @@ body > section:nth-of-type(even) {
 .diff-pip.hard { background: var(--red); }
 
 /* ── Investing ── */
+.notice { color: rgb(255, 93, 93);}
 #investing { --investing-muted: #8BA3B9; }
 #investing h2 { margin-bottom: 0.5rem; }
 .investing-intro { color: var(--investing-muted); font-size: 0.95rem; margin-bottom: 2rem; }
