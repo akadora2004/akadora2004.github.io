@@ -1,6 +1,5 @@
-/* Shared colors, fonts, navigation and footer come from style.css. */
+/* Page layout; shared styles are in style.css and wa-theme.css. */
 .internship-page {
-    --internship-muted: #8BA3B9;
     min-height: 100vh;
     display: flex;
     flex-direction: column;

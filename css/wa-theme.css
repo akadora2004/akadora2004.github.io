@@ -1,0 +1,160 @@
+/* Visual theme only: page content, section order and grids stay in style.css. */
+:root {
+    color-scheme: dark;
+    --bg: #171714;
+    --bg3: #23241f;
+    --surface: #2c2c25;
+    --border: #454238;
+    --border2: #605846;
+    --green: #d9bd83;
+    --green-dim: #c7a86e;
+    --green-mute: #756342;
+    --green-glow: #d9bd8318;
+    --cyan: #d8cbb0;
+    --cyan-dim: #cabc9e;
+    --text: #f0eadf;
+    --text-muted: #c2bbae;
+    --text-dim: #b3aa99;
+    --font-serif: 'Noto Serif JP', 'Yu Mincho', serif;
+    --font-sans: 'Noto Sans JP', 'Yu Gothic', sans-serif;
+    --room-photo: url('../img/IMG_2376.jpeg');
+}
+
+body {
+    font-family: var(--font-sans);
+    isolation: isolate;
+    line-height: 1.85;
+}
+
+/* The photo stays behind the page; opaque reading surfaces protect contrast. */
+body::before {
+    z-index: -1;
+    background-color: var(--bg);
+    background-image:
+        linear-gradient(90deg, rgba(18, 19, 17, 0.94), rgba(18, 19, 17, 0.78) 42%, rgba(18, 19, 17, 0.3)),
+        linear-gradient(0deg, rgba(18, 19, 17, 0.8), transparent 55%),
+        var(--room-photo);
+    background-size: cover;
+    background-position: center;
+}
+
+::selection { color: var(--bg); background: var(--green); }
+a:focus-visible { outline: 2px solid var(--green); outline-offset: 5px; }
+
+nav {
+    background: rgba(23, 23, 20, 0.96);
+    border-bottom-color: var(--green-mute);
+}
+.nav-links { gap: 1.5rem; }
+.nav-links a { letter-spacing: 0.06em; }
+.nav-links a::before { content: '・'; }
+
+h1, h2, .tl-title, .proj-title, .article-title, .contact-footer h3,
+.investing-card h3, .investing-terminal h3, .pc-build-heading h3 {
+    font-family: var(--font-serif);
+    color: var(--text);
+    font-weight: 500;
+}
+h1 { line-height: 1.15; letter-spacing: 0.04em; }
+h2 { letter-spacing: 0.09em; }
+
+.hero > .container { width: 100%; }
+.hero-status { color: var(--text); letter-spacing: 0.08em; }
+.status-dot { background: var(--green); }
+.hero-prompt { color: var(--text-muted); }
+.hero-prompt .hero-command { color: var(--text); }
+.hero-tagline { font-family: var(--font-sans); font-weight: 400; line-height: 2.2; color: var(--text); }
+.hero-tagline .hi { color: var(--green); }
+.hero-stats { border-top-color: var(--green-mute); }
+.stat-label { color: var(--text); font-size: 0.68rem; }
+.avatar-box { border: 1px solid var(--green-mute); box-shadow: 0 0 0 5px #d9bd830a; background: #f7f5e7; }
+.btn { padding-block: 0.9rem; letter-spacing: 0.03em; }
+.btn-primary { color: #201c14; background: var(--green); }
+.btn-outline { background: rgba(23, 23, 20, 0.7); }
+
+body > section:nth-of-type(odd), body > section:nth-of-type(even) {
+    border-top: 1px solid var(--border);
+    border-bottom: 0;
+    background-color: rgba(23, 23, 20, 0.97);
+}
+body > section:nth-of-type(odd) {
+    background-color: rgba(30, 31, 26, 0.97);
+    background-image: repeating-linear-gradient(90deg, transparent, transparent 79px, rgba(217, 189, 131, 0.025) 79px, rgba(217, 189, 131, 0.025) 80px);
+}
+.section-tag { letter-spacing: 0.16em; }
+.section-tag::after { background: var(--green-mute); max-width: 80px; }
+
+.terminal, .proj-card, .article-card, .investing-card, .investing-learning,
+.pc-performance, .contact-footer { box-shadow: 0 8px 24px #00000012; }
+.terminal-bar { background: #292a23; }
+.terminal-body { overflow-wrap: anywhere; }
+.about-grid > *, .pc-grid > *, .investing-grid > * { min-width: 0; }
+.dot-red { background: #b97361; }
+.dot-amber { background: #c5aa72; }
+.dot-green { background: #89977b; }
+.t-str { color: #c8d0af; }
+.t-key { color: var(--green); }
+.tag-hot, .tag:hover { background: #d9bd830a; }
+.tag { line-height: 1.6; }
+.tl-item::before { content: '◇'; color: var(--green); }
+.tl-desc, .proj-desc { line-height: 1.95; }
+.tl-title { font-size: 1.15rem; line-height: 1.8; }
+.tl-link { color: var(--green); background: #d9bd8308; border-color: var(--green-mute); }
+.tl-link:hover { color: var(--text); background: #d9bd8314; border-color: var(--green); }
+.proj-title { font-size: 1.25rem; }
+.proj-arrow { opacity: 1; }
+.article-title { line-height: 1.8; }
+
+#investing { --investing-muted: var(--text-muted); }
+#gaming-pc { --pc-muted: var(--text-muted); }
+.notice { color: #eba18c; }
+.investing-card { border-left-color: var(--green-dim); }
+.pc-build-label, .pc-resolution, .pc-benchmark { background: #d9bd8308; }
+.pc-image-stage {
+    background-image: repeating-linear-gradient(90deg, transparent, transparent 31px, #d9bd8308 31px, #d9bd8308 32px);
+    background-size: auto;
+}
+.pc-game-list li::before { background: linear-gradient(90deg, #d9bd831a, #d9bd8305); }
+.pc-game-list strong { color: var(--text); }
+.pc-specs dd { font-size: 0.95rem; }
+.link-name { font-family: var(--font-serif); letter-spacing: 0.06em; }
+.contact-footer { border-top: 2px solid var(--green-mute); }
+footer { background: #171714; border-top-color: var(--green-mute); }
+footer p, .writeups-page footer p { color: var(--text-muted); }
+
+/* Keep the two detail pages consistent with the same reading surfaces. */
+.internship-page { --internship-muted: var(--text-muted); }
+.internship-main > .container, .writeups-main > .container {
+    background: rgba(23, 23, 20, 0.96);
+    border-top: 2px solid var(--green-mute);
+    padding: clamp(1.25rem, 4vw, 3rem);
+}
+.internship-content { line-height: 2.1; }
+.writeups-list { padding-left: 1.25rem; }
+.writeups-list li::marker { color: var(--green); }
+.writeups-list a { line-height: 2; }
+
+@media (max-width: 1000px) {
+    .nav-links { gap: 0.35rem 1rem; }
+}
+
+@media (max-width: 768px) {
+    body::before {
+        background-image: linear-gradient(90deg, rgba(18, 19, 17, 0.9), rgba(18, 19, 17, 0.68)), var(--room-photo);
+        background-position: 60% center;
+    }
+    .hero-identity { flex-wrap: wrap; }
+    .hero-tagline { font-size: 0.9rem; }
+    .hero-stats { gap: 1.75rem 2rem; }
+    .projects-grid { grid-template-columns: minmax(0, 1fr); }
+    .article-card { padding: 1.25rem; gap: 1rem; }
+    .contact-footer { padding: 1.5rem; }
+    .contact-email { white-space: normal; overflow-wrap: anywhere; text-align: center; }
+    .pc-game-list li { flex-wrap: wrap; }
+    .internship-main h1, .writeups-main h1 { overflow-wrap: anywhere; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after { animation: none !important; transition: none !important; }
+}

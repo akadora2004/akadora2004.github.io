@@ -1,4 +1,4 @@
-/* Shared colors, navigation and footer come from style.css. */
+/* Page layout; shared styles are in style.css and wa-theme.css. */
 .writeups-page {
     min-height: 100vh;
     display: flex;
@@ -35,12 +35,10 @@
 .writeups-list a {
     color: var(--cyan);
     font-size: 1rem;
-    line-height: 1.8;
     text-underline-offset: 4px;
     overflow-wrap: anywhere;
 }
 .writeups-list a:hover { color: var(--green); }
-.writeups-page footer p { color: #8BA3B9; }
 
 @media (max-width: 768px) {
     .writeups-main { padding: 9rem 1.5rem 3rem; }
