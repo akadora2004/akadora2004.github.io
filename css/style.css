@@ -497,7 +497,9 @@ h2 {
     background: var(--border);
 }
 
-.diff-pip.on { background: var(--green); }
+.diff-pip.on { background: var(--difficulty-easy); }
+.diff-pip.med { background: var(--difficulty-medium); }
+.diff-pip.hard { background: var(--difficulty-hard); }
 
 /* ── Investing ── */
 
