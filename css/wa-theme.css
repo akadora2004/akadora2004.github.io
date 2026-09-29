@@ -52,7 +52,7 @@ nav {
 .nav-links a { letter-spacing: 0.06em; }
 .nav-links a::before { content: '・'; }
 
-h1, h2, .tl-title, .proj-title, .article-title, .contact-footer h3,
+h1, h2, .tl-title, .proj-title, .resource-title, .contact-footer h3,
 .investing-card h3, .investing-terminal h3, .pc-build-heading h3 {
     font-family: var(--font-serif);
     color: var(--text);
@@ -87,7 +87,7 @@ body > section:nth-of-type(odd) {
 .section-tag { letter-spacing: 0.16em; }
 .section-tag::after { background: var(--green-mute); max-width: 80px; }
 
-.terminal, .proj-card, .article-card, .investing-card, .investing-learning,
+.terminal, .proj-card, .resource-card, .investing-card, .investing-strategy,
 .pc-performance, .contact-footer { box-shadow: 0 8px 24px #00000012; }
 .terminal-bar { background: #292a23; }
 .terminal-body { overflow-wrap: anywhere; }
@@ -102,11 +102,11 @@ body > section:nth-of-type(odd) {
 .tl-item::before { content: '◇'; color: var(--green); }
 .tl-desc, .proj-desc { line-height: 1.95; }
 .tl-title { font-size: 1.15rem; line-height: 1.8; }
-.tl-link { color: var(--green); background: #d9bd8308; border-color: var(--green-mute); }
-.tl-link:hover { color: var(--text); background: #d9bd8314; border-color: var(--green); }
+.action-link { color: var(--green); background: #d9bd8308; border-color: var(--green-mute); }
+.action-link:hover { color: var(--text); background: #d9bd8314; border-color: var(--green); }
 .proj-title { font-size: 1.25rem; }
 .proj-arrow { opacity: 1; }
-.article-title { line-height: 1.8; }
+.resource-title { line-height: 1.8; }
 
 #investing { --investing-muted: var(--text-muted); }
 #gaming-pc { --pc-muted: var(--text-muted); }
@@ -123,16 +123,15 @@ body > section:nth-of-type(odd) {
 .link-name { font-family: var(--font-serif); letter-spacing: 0.06em; }
 .contact-footer { border-top: 2px solid var(--green-mute); }
 footer { background: #171714; border-top-color: var(--green-mute); }
-footer p, .writeups-page footer p { color: var(--text-muted); }
+footer p { color: var(--text-muted); }
 
-/* Keep the two detail pages consistent with the same reading surfaces. */
-.internship-page { --internship-muted: var(--text-muted); }
-.internship-main > .container, .writeups-main > .container {
+/* Shared reading surfaces for detail pages. */
+.detail-main > .container {
     background: rgba(23, 23, 20, 0.96);
     border-top: 2px solid var(--green-mute);
     padding: clamp(1.25rem, 4vw, 3rem);
 }
-.internship-content { line-height: 2.1; }
+.detail-content { line-height: 2.1; }
 .writeups-list { padding-left: 1.25rem; }
 .writeups-list li::marker { color: var(--green); }
 .writeups-list a { line-height: 2; }
@@ -150,11 +149,11 @@ footer p, .writeups-page footer p { color: var(--text-muted); }
     .hero-tagline { font-size: 0.9rem; }
     .hero-stats { gap: 1.75rem 2rem; }
     .projects-grid { grid-template-columns: minmax(0, 1fr); }
-    .article-card { padding: 1.25rem; gap: 1rem; }
+    .resource-card { padding: 1.25rem; gap: 1rem; }
     .contact-footer { padding: 1.5rem; }
     .contact-email { white-space: normal; overflow-wrap: anywhere; text-align: center; }
     .pc-game-list li { flex-wrap: wrap; }
-    .internship-main h1, .writeups-main h1 { overflow-wrap: anywhere; }
+    .detail-main h1 { overflow-wrap: anywhere; }
 }
 
 @media (prefers-reduced-motion: reduce) {

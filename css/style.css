@@ -365,7 +365,7 @@ h2 {
     margin-bottom: 0.75rem;
 }
 
-.tl-link {
+.action-link {
     display: inline-flex;
     align-items: center;
     gap: 0.45rem;
@@ -380,17 +380,17 @@ h2 {
     transition: color 0.2s, background-color 0.2s, border-color 0.2s;
 }
 
-.tl-link::before {
+.action-link::before {
     color: var(--text-muted);
     content: '$';
 }
 
-.tl-link::after {
+.action-link::after {
     content: '↗';
     transition: transform 0.2s;
 }
 
-.tl-link:hover::after {
+.action-link:hover::after {
     transform: translate(2px, -2px);
 }
 
@@ -514,10 +514,10 @@ h2 {
 .investing-card h3 { font-size: 1.2rem; margin: 0.5rem 0; }
 .investing-card h3 + p { color: var(--investing-muted); font-size: 0.875rem; line-height: 1.9; }
 .investing-keywords { display: block; color: var(--cyan); font-size: 0.7rem; margin-top: 1rem; }
-.investing-learning { padding: 1.5rem; margin-top: 2rem; border: 1px solid var(--border2); background: var(--bg3); }
-.investing-learning ul { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.5rem; list-style: none; margin-top: 1rem; }
-.investing-learning li { color: var(--investing-muted); font-size: 0.8rem; line-height: 1.8; }
-.investing-learning li span { display: block; font-family: 'Share Tech Mono', monospace; font-size: 0.8rem; color: var(--text); margin-bottom: 0.25rem; }
+.investing-strategy { padding: 1.5rem; margin-top: 2rem; border: 1px solid var(--border2); background: var(--bg3); }
+.investing-strategy ul { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.5rem; list-style: none; margin-top: 1rem; }
+.investing-strategy li { color: var(--investing-muted); font-size: 0.8rem; line-height: 1.8; }
+.investing-strategy li span { display: block; font-family: 'Share Tech Mono', monospace; font-size: 0.8rem; color: var(--text); margin-bottom: 0.25rem; }
 
 /* ── Gaming PC ── */
 
@@ -797,7 +797,7 @@ h1            { animation: fadeUp 0.5s ease 0.3s both; }
     .about-grid { grid-template-columns: 1fr; gap: 2.5rem; }
     .pc-grid { grid-template-columns: 1fr; gap: 2rem; }
     .investing-grid { grid-template-columns: 1fr; gap: 1.5rem; }
-    .investing-learning ul { grid-template-columns: 1fr; gap: 1rem; }
+    .investing-strategy ul { grid-template-columns: 1fr; gap: 1rem; }
     .pc-image-stage img { max-width: 440px; margin-inline: auto; }
     .contact-footer { grid-template-columns: 1fr; }
     footer { padding: 1.5rem; }
@@ -809,7 +809,7 @@ h1            { animation: fadeUp 0.5s ease 0.3s both; }
     .pc-performance { padding: 0.8rem; }
 }
 
-.article-card {
+.resource-card {
     display: flex; align-items: center; justify-content: space-between; gap: 2rem;
     padding: 1.75rem 2rem;
     background: var(--bg3);
@@ -818,17 +818,20 @@ h1            { animation: fadeUp 0.5s ease 0.3s both; }
     transition: all 0.2s;
 }
 
-.article-card:hover { border-color: var(--green-mute); background: var(--surface); }
+.resource-card:hover { border-color: var(--green-mute); background: var(--surface); }
 
-.article-tag {
+.resource-label {
     font-family: 'Share Tech Mono', monospace; font-size: 0.65rem;
     color: var(--text-dim); letter-spacing: 0.15em; text-transform: uppercase;
     margin-bottom: 0.5rem;
 }
 
-.article-title {
+.resource-title {
     font-size: 1.15rem;
 }
 
-.article-arrow { font-family: 'Share Tech Mono', monospace; font-size: 1.1rem; color: var(--green); flex-shrink: 0; transition: transform 0.2s; }
-.article-card:hover .article-arrow { transform: translate(3px, -3px); }
+.resource-arrow { font-family: 'Share Tech Mono', monospace; font-size: 1.1rem; color: var(--green); flex-shrink: 0; transition: transform 0.2s; }
+.resource-card:hover .resource-arrow { transform: translate(3px, -3px); }
+
+/* Link lists for internships and events. */
+.activity-links { display: grid; gap: 2.5rem; }
