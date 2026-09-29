@@ -735,7 +735,9 @@ h2 {
     border: 1px solid var(--green);
     padding: 0.75rem 1.5rem;
     transition: all 0.2s;
-    white-space: nowrap;
+    white-space: normal;
+    overflow-wrap: anywhere;
+    text-align: center;
     letter-spacing: 0.03em;
 }
 
