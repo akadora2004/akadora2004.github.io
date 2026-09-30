@@ -99,7 +99,11 @@ body > section:nth-of-type(odd) {
 .t-key { color: var(--green); }
 .tag-hot, .tag:hover { background: #d9bd830a; }
 .tag { line-height: 1.6; }
-.tl-item::before { content: '◇'; color: var(--green); }
+.tl-item::before {
+    content: '◆';
+    color: var(--green);
+    text-shadow: 0 0 6px #d9bd8380, 0 0 14px #d9bd8340;
+}
 .tl-desc, .proj-desc { line-height: 1.95; }
 .tl-title { font-size: 1.15rem; line-height: 1.8; }
 .action-link { color: var(--green); background: #d9bd8308; border-color: var(--green-mute); }
